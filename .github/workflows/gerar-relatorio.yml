@@ -16,6 +16,11 @@ jobs:
       - name: Instalar R
         uses: r-lib/actions/setup-r@v2
 
+      - name: Instalar Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
       - name: Instalar pacotes R necessários
         run: |
           Rscript -e 'install.packages("rmarkdown", repos="https://cloud.r-project.org")'

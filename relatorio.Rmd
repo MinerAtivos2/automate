@@ -1,0 +1,8 @@
+---
+title: "Relatório Automático"
+output: html_document
+---
+
+```{r}
+summary(cars)
+plot(cars)
